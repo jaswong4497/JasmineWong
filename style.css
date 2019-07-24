@@ -1,1 +1,16 @@
+body{
+    color: whitesmoke;
+    text-align: center;
+    background-color: darkslategrey;
+    background-image: url("./jeremy-banks-Ui_7PiqnNbs-unsplash.jpg"); background-size: cover;
+}
 
+div{
+    
+    padding: 5%;
+
+}
+img{
+    width: 25%;
+    
+}
