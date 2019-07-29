@@ -1,16 +1,152 @@
-body{
-    color: whitesmoke;
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    grid-area: header;
+    color: white;
+    padding: 10px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 150%;
     text-align: center;
-    background-color: darkslategrey;
-    background-image: url("./jeremy-banks-Ui_7PiqnNbs-unsplash.jpg"); background-size: cover;
-}
+    background-image: url('./jeremy-banks-Ui_7PiqnNbs-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-div{
-    
-    padding: 5%;
-
-}
-img{
+  h2 {
+    font-size: 16px;
+    }
+  
+  nav {
+    grid-column-end: -1;
+    column-width: 200px
+    background-color: #0c141c;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul li {
+    padding: 10px;
+  }
+  
+  img {
     width: 25%;
-    
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas:
+      "nav"
+      "header"
+      "main"
+      "article";
+  }
+  
+  @media (min-width: 800px) {
+    .container {
+      grid-template-co: 1fr 3fr;
+      grid-template-areas:
+        "header header"
+        "nav main";
+    }
+    nav ul {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900);
+
+body {
+  font-family: 'Cinzel Decorative', cursive;
+  background: #0c141c;
+  background-size: cover;
+  color: white;
+}
+
+h1{
+        font-size: 2.5em;
+        text-shadow: 0 0 40px #ffbab3;
+        text-align: center;
+        padding: 20;
+        
+}
+
+article {
+  max-width: 600px;
+  overflow: hidden;
+  margin: 0 auto 60px;
+}
+
+.subtitle {
+  margin: 0 0 2em 0;
+}
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative; 
+  text-shadow: 0 0 40px #ffbab3;
+  font-size: 1.5em;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width: 600px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+.amp {
+  margin: 0 0 0.25em 0;
+}
+.amp span {
+  font-size: 0.7em;
+}
+
+.copy {
+  font: 1em Georgia, Serif;
+  text-align: justify;
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+}
+.copy p {
+  margin: 0 0 1em 0;
 }
