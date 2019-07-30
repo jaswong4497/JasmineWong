@@ -12,20 +12,23 @@
     color: white;
     padding: 10px;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 150%;
+    font-size: 100%;
     text-align: center;
     background-image: url('./jeremy-banks-Ui_7PiqnNbs-unsplash.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
   }
 
   h2 {
     font-size: 16px;
+    text-align: center;
+    
     }
   
   nav {
